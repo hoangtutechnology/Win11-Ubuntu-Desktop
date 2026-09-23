@@ -1,0 +1,592 @@
+.ArcMenuIconGrid {
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    spacing: 0px;
+    margin: 0px;
+}
+
+.ArcMenuGroupFolder{
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.ArcMenuIconGrid:drop {
+    box-shadow: inset 0px 0px 0px 2px rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2);
+}
+
+.arcmenu-menu-item:drop {
+    box-shadow: inset 0px 0px 0px 2px rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2);
+}
+
+.folder-header {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.arcmenu-folder-dialog {
+    border-width: 2px;
+}
+
+.folder-name-container{
+    spacing: 12px;
+}
+
+.bottomOfScreenMenu{
+    margin-bottom: 0px;
+}
+
+.arcmenu-search-entry{
+    width: 1px; /* prevents natural growth */
+    min-height: 0px;
+    border-width: 1px;
+    padding: 7px 9px;
+}
+
+.arcmenu-search-top{
+    margin: 0px 0px 6px 0px;
+}
+
+.arcmenu-search-bottom{
+    margin: 6px 0px 0px 0px;
+}
+
+.symbolic-icons{
+    -st-icon-style: symbolic;
+}
+.regular-icons{
+    -st-icon-style: regular;
+}
+
+.arcmenu-menu-item{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.arcmenu-plasma-button{
+    width: 90px;
+    height: 65px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    spacing: 0px;
+    margin: 0px;
+}
+
+.small-vfade{
+    -st-vfade-offset: 44px;
+}
+
+.arcmenu-margin-box{
+    margin: 0px 6px;
+}
+
+.arcmenu-button{
+    -st-icon-style: symbolic;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 8px;
+    min-height: 0px;
+}
+
+.arcmenu-small-button {
+    border-radius: 8px;
+    padding: 1px 6px;
+    min-height: auto;
+}
+
+.arcmenu-avatar-round{
+    background-size: contain;
+    border-radius: 999px;
+}
+.arcmenu-avatar-square{
+    background-size: contain;
+    border-radius: 0px;
+}
+
+.arcmenu-tooltip{
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 4px 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    min-height: 0px;
+}
+
+.arcmenu-indicator{
+    -st-icon-style: symbolic;
+    color: rgb(41, 165, 249);
+}
+
+/* Recently Installed App Indicator Text */
+.arcmenu-text-indicator{
+    font-size: small;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0px; 
+    padding: 0px 10px;
+}
+/* Windows 11 Taskbar Extras */
+#panel .panel-button.win11-search-button,
+#panel .panel-button.win11-search-button:hover,
+#panel .panel-button.win11-search-button:focus,
+#panel .panel-button.win11-search-button:active,
+#panel .panel-button.win11-search-button:checked,
+.dashtopanelMainPanel .panel-button.win11-search-button,
+.dashtopanelMainPanel .panel-button.win11-search-button:hover,
+.dashtopanelMainPanel .panel-button.win11-search-button:focus,
+.dashtopanelMainPanel .panel-button.win11-search-button:active,
+.dashtopanelMainPanel .panel-button.win11-search-button:checked,
+.panel-button.win11-search-button,
+.panel-button.win11-search-button:hover,
+.panel-button.win11-search-button:focus,
+.panel-button.win11-search-button:active,
+.panel-button.win11-search-button:checked {
+    background-color: transparent !important;
+    background-gradient-direction: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 2px !important;
+    margin: 0 !important;
+}
+
+.win11-search-box-container {
+    width: 216px;
+    padding: 0 3px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.win11-search-entry,
+#win11-search-entry {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.16) !important;
+    border-radius: 16px !important;
+    padding: 2px 12px 2px 10px !important;
+    color: #1f1f1f !important;
+    caret-color: #0067c0 !important;
+    selection-background-color: #0078d4 !important;
+    selected-color: #ffffff !important;
+    font-size: 13px !important;
+    width: 202px;
+    min-width: 202px;
+    max-width: 202px;
+    height: 34px;
+    margin: 4px 2px;
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.win11-search-entry:hover,
+#win11-search-entry:hover {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.30) !important;
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.08) !important;
+    color: #1f1f1f !important;
+}
+
+.win11-search-entry:focus,
+#win11-search-entry:focus,
+.win11-search-entry:active,
+#win11-search-entry:active {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(31, 31, 31, 0.32) !important;
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.08) !important;
+    color: #000000 !important;
+}
+
+.win11-search-entry StLabel.hint-text,
+#win11-search-entry StLabel.hint-text {
+    color: #5f6368 !important;
+    font-size: 13px !important;
+}
+
+.win11-search-entry:focus StLabel.hint-text,
+#win11-search-entry:focus StLabel.hint-text {
+    color: #757575 !important;
+}
+
+.win11-search-entry StIcon,
+.win11-search-entry .search-entry-icon,
+#win11-search-entry StIcon,
+#win11-search-entry .search-entry-icon {
+    icon-size: 16px;
+    padding-right: 6px;
+    color: #5f6368 !important;
+}
+
+.win11-search-entry:hover StIcon,
+.win11-search-entry:hover .search-entry-icon,
+#win11-search-entry:hover StIcon,
+#win11-search-entry:hover .search-entry-icon {
+    color: #1f1f1f !important;
+}
+
+.win11-search-entry:focus StIcon,
+.win11-search-entry:focus .search-entry-icon,
+#win11-search-entry:focus StIcon,
+#win11-search-entry:focus .search-entry-icon {
+    color: #5f6368 !important;
+}
+
+.win11-search-entry ClutterText,
+#win11-search-entry ClutterText {
+    color: #1f1f1f !important;
+}
+
+.win11-search-entry:focus ClutterText,
+#win11-search-entry:focus ClutterText {
+    color: #000000 !important;
+}
+
+.win11-search-overlay {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.win11-search-panel {
+    background-color: rgba(250, 248, 246, 0.98) !important;
+    color: #202124 !important;
+    border: 1px solid rgba(30, 40, 50, 0.22) !important;
+    border-radius: 12px !important;
+    padding: 14px 16px 16px 16px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22) !important;
+    spacing: 9px;
+}
+
+.win11-search-panel-header {
+    min-height: 46px;
+    padding: 0 12px;
+    border: 1px solid rgba(70, 80, 90, 0.22);
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.94);
+    spacing: 10px;
+}
+
+.win11-search-panel-entry {
+    min-height: 42px;
+    color: #202124 !important;
+    caret-color: #333333 !important;
+    font-size: 15px;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.win11-search-panel-entry StLabel.hint-text {
+    color: #6a6d72 !important;
+}
+
+.win11-search-panel-icon {
+    color: #54585d !important;
+}
+
+.win11-search-tabs {
+    spacing: 8px;
+    padding: 2px 0 10px 0;
+    border-bottom: 1px solid rgba(50, 60, 70, 0.12);
+}
+
+.win11-search-tab {
+    color: #30343a;
+    padding: 8px 13px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.58);
+}
+
+.win11-search-tab.selected {
+    color: #ffffff;
+    background-color: #1769aa;
+}
+
+.win11-search-tab-button {
+    color: #30343a;
+    padding: 7px 12px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.58);
+    border: 1px solid rgba(50, 60, 70, 0.08);
+}
+
+.win11-search-tab-button:hover,
+.win11-search-tab-button:focus {
+    background-color: rgba(255, 255, 255, 0.88);
+    border-color: rgba(23, 105, 170, 0.24);
+}
+
+.win11-search-tab-button.selected,
+.win11-search-tab-button.selected:hover,
+.win11-search-tab-button.selected:focus {
+    color: #ffffff;
+    background-color: #1769aa;
+    border-color: #1769aa;
+}
+
+.win11-search-panel-body {
+    spacing: 18px;
+    padding-top: 4px;
+}
+
+.win11-search-result-side {
+    width: 56%;
+    spacing: 8px;
+    padding: 2px 8px 0 2px;
+}
+
+.win11-search-section-title {
+    color: #34383d;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 8px 7px 8px;
+}
+
+.win11-search-results {
+    spacing: 3px;
+}
+
+.win11-search-result {
+    width: 100%;
+    min-height: 54px;
+    color: #202124 !important;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.win11-search-result:hover,
+.win11-search-result:focus {
+    background-color: rgba(255, 255, 255, 0.83) !important;
+    border-color: rgba(60, 80, 100, 0.15) !important;
+}
+
+.win11-search-result-row {
+    width: 100%;
+    spacing: 12px;
+}
+
+.win11-search-result-labels {
+    spacing: 2px;
+}
+
+.win11-search-result-name {
+    color: #202124;
+    font-size: 14px;
+}
+
+.win11-search-result-description,
+.win11-search-status {
+    color: #646a70;
+    font-size: 12px;
+}
+
+.win11-search-status {
+    padding: 8px;
+}
+
+.win11-search-details {
+    width: 42%;
+    spacing: 12px;
+    padding: 22px;
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(50, 60, 70, 0.1);
+}
+
+.win11-search-detail-icon {
+    margin-bottom: 8px;
+}
+
+.win11-search-detail-name {
+    color: #202124;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.win11-search-detail-description {
+    color: #646a70;
+    font-size: 13px;
+    text-align: center;
+}
+
+.win11-search-open-button {
+    color: #ffffff !important;
+    background-color: #1769aa !important;
+    border-radius: 7px;
+    padding: 8px 24px;
+    margin-top: 12px;
+    min-width: 96px;
+}
+
+#panel .panel-button.win11-task-view-button,
+#panel .panel-button.win11-task-view-button:hover,
+#panel .panel-button.win11-task-view-button:focus,
+#panel .panel-button.win11-task-view-button:active,
+.dashtopanelMainPanel .panel-button.win11-task-view-button,
+.dashtopanelMainPanel .panel-button.win11-task-view-button:hover,
+.dashtopanelMainPanel .panel-button.win11-task-view-button:focus,
+.dashtopanelMainPanel .panel-button.win11-task-view-button:active,
+.panel-button.win11-task-view-button,
+.panel-button.win11-task-view-button:hover,
+.panel-button.win11-task-view-button:focus,
+.panel-button.win11-task-view-button:active {
+    background-color: transparent !important;
+    background-gradient-direction: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 6px !important;
+    margin: 0 !important;
+    min-width: 34px;
+}
+
+.win11-task-view-button StIcon,
+.win11-task-view-icon {
+    icon-size: 20px;
+}
+
+.panel-button.win11-tray-overflow-button,
+.panel-button.win11-tray-overflow-button:hover,
+.panel-button.win11-tray-overflow-button:focus,
+.panel-button.win11-tray-overflow-button:active {
+    background-color: transparent !important;
+    background-gradient-direction: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 5px !important;
+    margin: 0 !important;
+    min-width: 28px;
+}
+
+.win11-tray-overflow-button StIcon {
+    icon-size: 16px;
+}
+
+.win11-tray-overflow-item-icon {
+    margin-right: 9px;
+}
+
+.win11-resource-monitor {
+    /* CSS width/height are content-box sizes; padding and border add 22x14px. */
+    width: 310px;
+    min-width: 310px;
+    max-width: 310px;
+    height: 42px;
+    background-color: rgba(28, 29, 32, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.win11-resource-label {
+    color: #f3f4f6;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.win11-resource-hide-button,
+.win11-resource-hide-button:hover,
+.win11-resource-hide-button:focus {
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+    padding: 0;
+    margin-left: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    color: #f3f4f6;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.win11-resource-show-button {
+    width: 38px;
+    min-width: 38px;
+    max-width: 38px;
+    height: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    padding: 0;
+    border: 1px solid rgba(31, 41, 55, 0.16);
+    border-radius: 10px;
+    color: #1769aa;
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 2px 9px rgba(18, 38, 63, 0.13);
+}
+
+.win11-resource-show-button:hover,
+.win11-resource-show-button:focus {
+    border-color: rgba(23, 105, 170, 0.42);
+    color: #0f5fa8;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(18, 38, 63, 0.18);
+}
+
+.win11-resource-show-button:active {
+    border-color: rgba(23, 105, 170, 0.52);
+    background-color: #eaf3fc;
+    box-shadow: inset 0 1px 2px rgba(18, 38, 63, 0.12);
+}
+
+.win11-resource-show-icon {
+    icon-size: 17px;
+    color: #1769aa;
+}
+
+/* Fluent-inspired light Quick Settings, scoped to GNOME's system menu. */
+.quick-settings {
+    color: #1f1f1f !important;
+    background-color: rgba(245, 247, 250, 0.98) !important;
+    border: 1px solid rgba(31, 41, 55, 0.14) !important;
+    border-radius: 20px !important;
+    padding: 12px !important;
+}
+
+.quick-settings-grid {
+    spacing-rows: 8px;
+    spacing-columns: 8px;
+}
+
+.quick-settings .quick-toggle,
+.quick-settings .quick-toggle-has-menu .quick-toggle {
+    color: #1f1f1f !important;
+    background-color: rgba(255, 255, 255, 0.92) !important;
+    border: 1px solid rgba(31, 41, 55, 0.10) !important;
+    border-radius: 12px !important;
+    min-height: 42px;
+}
+
+.quick-settings .quick-toggle:hover,
+.quick-settings .quick-toggle-has-menu .quick-toggle:hover {
+    background-color: #ffffff !important;
+    border-color: rgba(0, 120, 212, 0.3) !important;
+}
+
+.quick-settings .quick-toggle:checked,
+.quick-settings .quick-toggle-has-menu:checked .quick-toggle {
+    color: #ffffff !important;
+    background-color: #0078d4 !important;
+    border-color: #0078d4 !important;
+}
+
+.quick-settings .quick-toggle .quick-toggle-title,
+.quick-settings .quick-toggle .quick-toggle-subtitle,
+.quick-settings .quick-toggle StIcon {
+    color: inherit !important;
+}
+
+.quick-settings .quick-toggle-menu-button {
+    border-radius: 0 12px 12px 0 !important;
+}
+
+.quick-settings .quick-slider .slider-bin,
+.quick-settings .quick-settings-system-item .button,
+.quick-settings .quick-settings-system-item .icon-button {
+    border-radius: 10px !important;
+}
+
+.quick-settings .quick-toggle-menu {
+    color: #1f1f1f !important;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(31, 41, 55, 0.12) !important;
+    border-radius: 14px !important;
+}

@@ -1,0 +1,25 @@
+[Icon Theme]
+Name=Windows 11 Fluent
+Comment=Fluent icons with Windows-style folders and Recycle Bin
+Inherits=Fluent,hicolor
+Directories=scalable/places,scalable/apps,256/apps
+FollowsColorScheme=true
+
+[scalable/places]
+Context=Places
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=512
+
+[scalable/apps]
+Context=Applications
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=512
+
+[256/apps]
+Context=Applications
+Size=256
+Type=Fixed
