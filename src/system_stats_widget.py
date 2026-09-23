@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Project-specific desktop resource widget by hoangtutech.
 import gi
 import os
 from pathlib import Path

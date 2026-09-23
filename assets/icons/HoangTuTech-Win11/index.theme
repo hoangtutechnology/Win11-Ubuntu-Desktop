@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=Windows 11 Fluent
-Comment=Fluent icons with Windows-style folders and Recycle Bin
+Name=HoangTuTech Win11 Icons
+Comment=HoangTuTech Windows 11 icon overlay extending the Fluent icon theme
 Inherits=Fluent,hicolor
 Directories=scalable/places,scalable/apps,256/apps
 FollowsColorScheme=true

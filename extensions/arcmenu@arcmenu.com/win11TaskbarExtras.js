@@ -1,3 +1,7 @@
+/*
+ * Windows 11-style menu, search, Task View, and tray customizations by hoangtutech.
+ * This module is integrated into the upstream ArcMenu extension; see THIRD_PARTY_NOTICES.md.
+ */
 import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';

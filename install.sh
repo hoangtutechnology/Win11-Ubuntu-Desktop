@@ -8,12 +8,12 @@ CONFIG_HOME="${XDG_CONFIG_HOME:-$USER_HOME/.config}"
 PROJECT_PATH="${1:-}"
 
 mkdir -p "$USER_HOME/.themes" "$DATA_HOME/icons" "$USER_HOME/.local/bin" \
-  "$CONFIG_HOME/autostart" "$CONFIG_HOME/gtk-3.0" "$USER_HOME/.local/state/linux-to-windows/backups"
+  "$CONFIG_HOME/autostart" "$CONFIG_HOME/gtk-3.0" "$USER_HOME/.local/state/win11-ubuntu-desktop/backups"
 
-cp -a "$ROOT_DIR/assets/themes/Fluent-Light-compact" "$USER_HOME/.themes/"
-cp -a "$ROOT_DIR/assets/icons/Win11-Fluent" "$DATA_HOME/icons/"
+cp -a "$ROOT_DIR/assets/themes/HoangTuTech-Win11" "$USER_HOME/.themes/"
+cp -a "$ROOT_DIR/assets/icons/HoangTuTech-Win11" "$DATA_HOME/icons/"
 if command -v gtk-update-icon-cache >/dev/null 2>&1; then
-  gtk-update-icon-cache -f "$DATA_HOME/icons/Win11-Fluent" >/dev/null 2>&1 || true
+  gtk-update-icon-cache -f "$DATA_HOME/icons/HoangTuTech-Win11" >/dev/null 2>&1 || true
 fi
 install -m 644 "$ROOT_DIR/assets/icons/windows11-start.svg" "$DATA_HOME/icons/windows11-start.svg"
 install -m 644 "$ROOT_DIR/assets/icons/windows11-search.svg" "$DATA_HOME/icons/windows11-search.svg"
@@ -22,7 +22,7 @@ install -m 755 "$ROOT_DIR/src/system_stats_widget.py" "$USER_HOME/.local/bin/sys
 ARC_ID="arcmenu@arcmenu.com"
 ARC_SOURCE="$ROOT_DIR/extensions/$ARC_ID"
 ARC_DEST="$DATA_HOME/gnome-shell/extensions/$ARC_ID"
-ARC_BACKUP="$USER_HOME/.local/state/linux-to-windows/backups/$ARC_ID-$(date +%Y%m%d-%H%M%S)"
+ARC_BACKUP="$USER_HOME/.local/state/win11-ubuntu-desktop/backups/$ARC_ID-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$(dirname -- "$ARC_DEST")"
 if command -v gnome-extensions >/dev/null 2>&1; then
   gnome-extensions disable "$ARC_ID" >/dev/null 2>&1 || true
@@ -57,8 +57,8 @@ Terminal=false
 X-GNOME-Autostart-enabled=true
 DESKTOP_WIDGET
 
-gsettings set org.gnome.desktop.interface gtk-theme 'Fluent-Light-compact'
-gsettings set org.gnome.desktop.interface icon-theme 'Win11-Fluent'
+gsettings set org.gnome.desktop.interface gtk-theme 'HoangTuTech-Win11'
+gsettings set org.gnome.desktop.interface icon-theme 'HoangTuTech-Win11'
 if [[ -d /usr/share/icons/Bibata-Modern-Classic || -d "$DATA_HOME/icons/Bibata-Modern-Classic" ]]; then
   gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 else

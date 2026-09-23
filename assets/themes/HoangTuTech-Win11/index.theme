@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=HoangTuTech-Win11
+Comment=HoangTuTech Windows 11 desktop variant based on Fluent GTK and Materia
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=HoangTuTech-Win11
+MetacityTheme=HoangTuTech-Win11
+IconTheme=Fluent
+CursorTheme=Fluent
+ButtonLayout=close,minimize,maximize:menu
