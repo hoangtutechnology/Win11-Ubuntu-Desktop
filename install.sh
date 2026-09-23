@@ -20,7 +20,7 @@ install -m 644 "$ROOT_DIR/assets/icons/windows11-search.svg" "$DATA_HOME/icons/w
 install -m 755 "$ROOT_DIR/src/system_stats_widget.py" "$USER_HOME/.local/bin/system_stats_widget.py"
 
 ARC_ID="arcmenu@arcmenu.com"
-ARC_SOURCE="$ROOT_DIR/extensions/$ARC_ID"
+ARC_SOURCE="$ROOT_DIR/extensions/hoangtutech-menu"
 ARC_DEST="$DATA_HOME/gnome-shell/extensions/$ARC_ID"
 ARC_BACKUP="$USER_HOME/.local/state/win11-ubuntu-desktop/backups/$ARC_ID-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$(dirname -- "$ARC_DEST")"

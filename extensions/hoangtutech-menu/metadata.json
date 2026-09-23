@@ -1,0 +1,19 @@
+{
+  "_generated": "HoangTuTech Menu metadata; based on upstream ArcMenu",
+  "description": "Windows-style application menu for GNOME, maintained by hoangtutech.",
+  "gettext-domain": "arcmenu",
+  "name": "HoangTuTech Menu",
+  "settings-schema": "org.gnome.shell.extensions.arcmenu",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "url": "https://github.com/hoangtutechnology/Win11-Ubuntu-Desktop",
+  "uuid": "arcmenu@arcmenu.com",
+  "version": 73,
+  "version-name": "1.0"
+}

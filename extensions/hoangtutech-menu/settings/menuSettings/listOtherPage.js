@@ -31,7 +31,7 @@ class ArcMenuListOtherPage extends SubPage {
 
         if (this.list_type === Constants.MenuSettingsListType.POWER_OPTIONS) {
             this._mainGroup.set({
-                description: _('Actions will be hidden from ArcMenu if not available on your system.'),
+                description: _('Actions will be hidden from HoangTuTech Menu if not available on your system.'),
             });
 
             const powerDisplayStyleGroup = new Adw.PreferencesGroup({

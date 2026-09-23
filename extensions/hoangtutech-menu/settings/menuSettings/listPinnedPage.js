@@ -346,7 +346,7 @@ class ArcMenuAddAppsToPinnedListWindow extends PW.DialogWindow {
 
         if (this._dialogType === Constants.MenuSettingsListType.PINNED_APPS  ||
             this._dialogType === Constants.MenuSettingsListType.FOLDER_PINNED_APPS) {
-            const extraItem = [[_('ArcMenu Settings'), Constants.ArcMenuLogoSymbolic,
+            const extraItem = [[_('HoangTuTech Menu Settings'), Constants.ArcMenuLogoSymbolic,
                 Constants.ShortcutCommands.ARCMENU_SETTINGS]];
             this._loadExtraCategories(extraItem);
             this._loadCategories();
@@ -357,7 +357,7 @@ class ArcMenuAddAppsToPinnedListWindow extends PW.DialogWindow {
             this._loadExtraCategories(extraLinks);
         } else if (this._dialogType === Constants.MenuSettingsListType.APPLICATIONS) {
             const extraLinks = [];
-            extraLinks.push([_('ArcMenu Settings'), Constants.ArcMenuLogoSymbolic,
+            extraLinks.push([_('HoangTuTech Menu Settings'), Constants.ArcMenuLogoSymbolic,
                 Constants.ShortcutCommands.ARCMENU_SETTINGS]);
             extraLinks.push([_('Run Command...'), 'system-run-symbolic', Constants.ShortcutCommands.RUN_COMMAND]);
             extraLinks.push([_('Activities Overview'), 'view-fullscreen-symbolic',
@@ -369,7 +369,7 @@ class ArcMenuAddAppsToPinnedListWindow extends PW.DialogWindow {
             this._loadCategories();
         } else if (this._dialogType === Constants.MenuSettingsListType.CONTEXT_MENU) {
             const extraLinks = [];
-            extraLinks.push([_('ArcMenu Settings'), Constants.ArcMenuLogoSymbolic,
+            extraLinks.push([_('HoangTuTech Menu Settings'), Constants.ArcMenuLogoSymbolic,
                 Constants.ShortcutCommands.SETTINGS]);
             extraLinks.push([_('Menu Settings'), Constants.ArcMenuLogoSymbolic,
                 Constants.ShortcutCommands.SETTINGS_MENU]);

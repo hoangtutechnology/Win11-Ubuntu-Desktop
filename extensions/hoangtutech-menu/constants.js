@@ -274,7 +274,7 @@ export const LayoutCategoriesInfo = [
 ];
 
 export const MenuLayoutsInfo = [
-    {id: 'arcmenu',        title: _('ArcMenu'),        category: 'traditional'},
+    {id: 'arcmenu',        title: _('HoangTuTech Menu'),        category: 'traditional'},
     {id: 'brisk',          title: _('Brisk'),          category: 'traditional'},
     {id: 'budgie',         title: _('Budgie'),         category: 'traditional'},
     {id: 'gnome-menu',     title: _('GNOME Menu'),     category: 'traditional'},
@@ -302,7 +302,7 @@ export const MenuLayoutsInfo = [
 export const ArcMenuLogoSymbolic = 'arcmenu-logo-symbolic';
 
 export const TranslatableSettingsStrings = [_('Software'), _('Settings'), _('Tweaks'), _('Terminal'),
-    _('Activities Overview'), _('ArcMenu Settings'), _('Files')];
+    _('Activities Overview'), _('HoangTuTech Menu Settings'), _('Files')];
 
 export const ShortcutCommands = {
     SUSPEND: 'ArcMenu_Suspend',

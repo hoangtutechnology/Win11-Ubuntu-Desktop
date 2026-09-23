@@ -209,7 +209,7 @@ class ArcMenuMenuButtonPage extends Adw.PreferencesPage {
         this.add(clickOptionsGroup);
 
         const clickOptionsList = new Gtk.StringList();
-        clickOptionsList.append(_('ArcMenu'));
+        clickOptionsList.append(_('HoangTuTech Menu'));
         clickOptionsList.append(_('Context Menu'));
         clickOptionsList.append(_('None'));
 

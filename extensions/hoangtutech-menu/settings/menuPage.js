@@ -173,7 +173,7 @@ class ArcMenuMenuPage extends Adw.PreferencesPage {
         this.add(contextMenuGroup);
 
         const contextMenuRow = new PW.SettingRow({
-            title: _('Modify ArcMenu Context Menu'),
+            title: _('Modify HoangTuTech Menu Context Menu'),
             icon_name: 'view-list-bullet-symbolic',
         });
         this._addSubPageToRow(contextMenuRow, {

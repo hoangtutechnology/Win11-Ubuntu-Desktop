@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=HoangTuTech Win11 Icons
-Comment=HoangTuTech Windows 11 icon overlay extending the Fluent icon theme
+Comment=HoangTuTech Windows 11 icon theme
 Inherits=Fluent,hicolor
 Directories=scalable/places,scalable/apps,256/apps
 FollowsColorScheme=true

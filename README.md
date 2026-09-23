@@ -8,9 +8,9 @@ A reusable GNOME desktop setup based on the configuration currently used on this
 
 - HoangTuTech-Win11 GTK theme package, based on Fluent GTK and Materia; upstream notices and licenses are retained.
 - HoangTuTech Win11 icon overlay, plus the custom Start and search icons; it inherits the separately installed Fluent icon theme.
-- HoangTuTech Win11 Start Menu, a customized ArcMenu 73 fork with Windows-style search, Task View, and tray overflow. Its GNOME extension ID stays `arcmenu@arcmenu.com` for compatibility; upstream credit and GPL-2.0 license are retained.
+- HoangTuTech Menu, based on ArcMenu 73, with Windows-style search, Task View, and tray overflow. Its GNOME extension ID stays `arcmenu@arcmenu.com` for compatibility; upstream credit and GPL-2.0 license are retained.
 - The CPU, Memory, Disk, and Ethernet desktop widget, including hide/restore and autostart.
-- A login script that enables Dash-to-Panel and ArcMenu and disables Ubuntu Dock when those extensions are installed.
+- A login script that enables Dash-to-Panel and HoangTuTech Menu and disables Ubuntu Dock when those extensions are installed.
 
 The project integration, resource widget, setup scripts, and custom Windows-style additions are by `hoangtutech`. Bundled third-party code and assets remain identified with their original authors and licenses in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
@@ -20,7 +20,7 @@ The install script does not export this computer's app history, credentials, Cod
 
 - Ubuntu or another GNOME Shell desktop, tested against GNOME Shell 50 and GTK 3.
 - `python3-gi` and GTK 3 introspection bindings for the resource widget.
-- Dash-to-Panel installed. The customized ArcMenu fork is included.
+- Dash-to-Panel installed. HoangTuTech Menu is included.
 - The Fluent base icon theme and Bibata-Modern-Classic cursor theme. They are separate dependencies; this repository contains the local Windows-style icon overlay.
 
 On Ubuntu, the GTK widget dependency is available with:

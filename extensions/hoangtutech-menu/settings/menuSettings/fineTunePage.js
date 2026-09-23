@@ -57,7 +57,7 @@ class ArcMenuFineTunePage extends SubPage {
             _('Launching an app activates its existing window if one is open; otherwise, it launches a new instance. Hold Ctrl while launching or middle-click to open a new window.'));
         miscGroup.add(activateOnLaunchRow);
 
-        const keepOpenCtrlClickRow = createSwitchRow('keep-open-on-ctrl-click', _('Keep ArcMenu Open on Ctrl+Click'),
+        const keepOpenCtrlClickRow = createSwitchRow('keep-open-on-ctrl-click', _('Keep HoangTuTech Menu Open on Ctrl+Click'),
             _('Prevents the menu from closing when activating items while holding Ctrl.'));
         miscGroup.add(keepOpenCtrlClickRow);
 

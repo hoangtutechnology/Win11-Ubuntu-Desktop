@@ -59,7 +59,7 @@ export const AppContextMenu = class ArcMenuAppContextMenu extends AppMenu {
         this._onGpuMenuItem.connect('activate', () => this.closeMenus());
         this._detailsItem.connect('activate', () => this.closeMenus());
 
-        this._arcMenuPinnedItem = this._createMenuItem(_('Pin to ArcMenu'), 8, () => {
+        this._arcMenuPinnedItem = this._createMenuItem(_('Pin to HoangTuTech Menu'), 8, () => {
             this.close();
 
             if (this._pinnedAppData) {
@@ -239,7 +239,7 @@ export const AppContextMenu = class ArcMenuAppContextMenu extends AppMenu {
         this._disconnectSignals();
         this.removeAll();
         this._id = id;
-        this._arcMenuPinnedItem = this._createMenuItem(_('Unpin from ArcMenu'), 0, () => {
+        this._arcMenuPinnedItem = this._createMenuItem(_('Unpin from HoangTuTech Menu'), 0, () => {
             this.close();
 
             let sourceSettings;
@@ -276,7 +276,7 @@ export const AppContextMenu = class ArcMenuAppContextMenu extends AppMenu {
 
         this._arcMenuPinnedItem.visible = this._menuLayout.hasPinnedApps;
 
-        this._arcMenuPinnedItem.label.text = this._pinnedAppData ?  _('Unpin from ArcMenu') : _('Pin to ArcMenu');
+        this._arcMenuPinnedItem.label.text = this._pinnedAppData ?  _('Unpin from HoangTuTech Menu') : _('Pin to HoangTuTech Menu');
     }
 
     _updateWindowsSection() {

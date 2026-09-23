@@ -113,7 +113,7 @@ class ArcMenuGeneralPage extends Adw.PreferencesPage {
         });
 
         const multiMonitorRow = new Adw.ActionRow({
-            title: _('Display ArcMenu on all Panels'),
+            title: _('Display HoangTuTech Menu on all Panels'),
             subtitle: _('Dash to Panel or App Icons Taskbar extension required'),
             activatable_widget: multiMonitorSwitch,
         });
@@ -149,7 +149,7 @@ class ArcMenuGeneralPage extends Adw.PreferencesPage {
         });
         this.add(generalGroup);
 
-        this.menuHotkeyRow = this._createExpanderRow(_('ArcMenu Hotkey'), true);
+        this.menuHotkeyRow = this._createExpanderRow(_('HoangTuTech Menu Hotkey'), true);
         this.standaloneRunnerRow = this._createExpanderRow(_('Standalone Runner Menu'), false);
         generalGroup.add(this.menuHotkeyRow);
         generalGroup.add(this.standaloneRunnerRow);
@@ -177,7 +177,7 @@ class ArcMenuGeneralPage extends Adw.PreferencesPage {
             this._settings.set_boolean('hide-overview-on-arcmenu-open', widget.get_active());
         });
         const hideOverviewOnOpenRow = new Adw.ActionRow({
-            title: _('Hide Overview when ArcMenu Opens'),
+            title: _('Hide Overview when HoangTuTech Menu Opens'),
             activatable_widget: hideOverviewOnOpenSwitch,
         });
         hideOverviewOnOpenRow.add_suffix(hideOverviewOnOpenSwitch);
@@ -266,7 +266,7 @@ const HotkeyDialog = GObject.registerClass({
 },
 class ArcMenuHotkeyDialog extends Adw.Window {
     _init(isMenuHotkey, settings, parent) {
-        const title = isMenuHotkey ? _('ArcMenu Hotkeys') : _('Standalone Runner Hotkeys');
+        const title = isMenuHotkey ? _('HoangTuTech Menu Hotkeys') : _('Standalone Runner Hotkeys');
         super._init({
             modal: true,
             title,
@@ -641,7 +641,7 @@ class ArcMenuHotkeyDialog extends Adw.Window {
         });
         const arcmenuHotkey = this._settings.get_strv('arcmenu-hotkey');
         arcmenuHotkey.forEach(hotkey => {
-            arcMenuHotkeys[hotkey] = [_('ArcMenu')];
+            arcMenuHotkeys[hotkey] = [_('HoangTuTech Menu')];
         });
 
         for (const combo in newHotkeyMap) {

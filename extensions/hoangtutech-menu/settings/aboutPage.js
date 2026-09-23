@@ -30,9 +30,8 @@ class ArcMenuAboutPage extends Adw.PreferencesPage {
             name: 'AboutPage',
         });
 
-        const PROJECT_NAME = _('ArcMenu');
-        const PROJECT_DESCRIPTION = _('Application Menu Extension for GNOME');
-        const PROJECT_IMAGE = 'settings-arcmenu-logo';
+        const PROJECT_NAME = _('HoangTuTech Menu');
+        const PROJECT_DESCRIPTION = _('Windows-style application menu for GNOME');
         const SCHEMA_PATH = '/org/gnome/shell/extensions/arcmenu/';
         const VERSION = metadata['version-name'] ? metadata['version-name'] : metadata.version.toString();
 
@@ -46,11 +45,9 @@ class ArcMenuAboutPage extends Adw.PreferencesPage {
             vexpand: false,
         });
 
-        const projectImage = new Gtk.Image({
-            margin_bottom: 5,
-            icon_name: PROJECT_IMAGE,
-            pixel_size: 100,
-        });
+        const projectImage = Gtk.Image.new_from_file(`${path}/data/hoangtutech-menu.svg`);
+        projectImage.set_margin_bottom(5);
+        projectImage.set_pixel_size(100);
 
         const projectTitleLabel = new Gtk.Label({
             label: _(PROJECT_NAME),
@@ -187,11 +184,11 @@ class ArcMenuAboutPage extends Adw.PreferencesPage {
         // -----------------------------------------------------------------------
 
         // Links -----------------------------------------------------------------
-        /* TRANSLATORS: 'PROJECT_NAME' on GitLab*/
-        const gitlabRow = this._createLinkRow(_('%s on GitLab').format(PROJECT_NAME), `${metadata.url}`);
-        infoGroup.add(gitlabRow);
+        /* TRANSLATORS: 'PROJECT_NAME' project page*/
+        const projectRow = this._createLinkRow(_('%s project page').format(PROJECT_NAME), `${metadata.url}`);
+        infoGroup.add(projectRow);
 
-        const reportIssueRow = this._createLinkRow(_('Report an Issue'), `${metadata.url}/-/issues`);
+        const reportIssueRow = this._createLinkRow(_('Report an Issue'), `${metadata.url}/issues`);
         infoGroup.add(reportIssueRow);
         // -----------------------------------------------------------------------
 

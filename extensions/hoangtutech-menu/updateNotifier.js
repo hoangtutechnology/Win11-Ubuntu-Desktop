@@ -6,10 +6,10 @@ import * as MessageTray from 'resource:///org/gnome/shell/ui/messageTray.js';
 
 import {gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-import {RESOURCE_PATH, SettingsPage} from './constants.js';
+import {SettingsPage} from './constants.js';
 
-const PROJECT_NAME = 'ArcMenu';
-const PROJECT_ICON = 'emblems/settings-arcmenu-logo.svg';
+const PROJECT_NAME = 'HoangTuTech Menu';
+const PROJECT_ICON = 'data/hoangtutech-menu.svg';
 
 const [ShellVersion] = Config.PACKAGE_VERSION.split('.').map(s => Number(s));
 
@@ -30,7 +30,7 @@ export class UpdateNotification {
 
         this._version = metadata.version ?? 0;
         this._versionName = metadata['version-name'] ?? this._version.toString();
-        this._iconPath = `${RESOURCE_PATH}/${PROJECT_ICON}`;
+        this._iconPath = `${extension.path}/${PROJECT_ICON}`;
 
         this._maybeShowNotification();
     }
@@ -72,9 +72,9 @@ export class UpdateNotification {
         if (isMinorRelease)
             body = _("Check out what's new.");
         else
-            body = _('Thank you for using %s! If you enjoy it and would like to help support its continued development, please consider making a donation.').format(PROJECT_NAME);
+            body = _('Thank you for using %s. To support the original ArcMenu maintainers, see the support page.').format(PROJECT_NAME);
 
-        const gicon = Gio.Icon.new_for_string(this._iconPath);
+        const gicon = Gio.FileIcon.new(Gio.File.new_for_path(this._iconPath));
 
         const source = this._getSource(PROJECT_NAME, 'application-x-addon-symbolic');
         Main.messageTray.add(source);
@@ -84,7 +84,7 @@ export class UpdateNotification {
 
         if (!isMinorRelease) {
             notification.resident = true;
-            notification.addAction(_('Donate'), () => this._openSettingsPage(SettingsPage.DONATE));
+            notification.addAction(_('Support ArcMenu upstream'), () => this._openSettingsPage(SettingsPage.DONATE));
         }
 
         notification.addAction(_("What's new?"), () => this._openSettingsPage(SettingsPage.WHATS_NEW));

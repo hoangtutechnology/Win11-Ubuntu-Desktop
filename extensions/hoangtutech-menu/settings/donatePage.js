@@ -14,8 +14,8 @@ class ArcMenuDonatePage extends Adw.PreferencesPage {
             name: 'DonatePage',
         });
 
-        const PROJECT_NAME = _('ArcMenu');
-        const PAYPAL_LINK = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=53CWA7NR743WC&item_name=Support+${metadata.name}&source=url`;
+        const PROJECT_NAME = _('ArcMenu upstream');
+        const PAYPAL_LINK = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=53CWA7NR743WC&item_name=Support+ArcMenu+upstream&source=url';
         const BUYMEACOFFEE_LINK = 'https://buymeacoffee.com/azaech';
 
         const donateGroup = new Adw.PreferencesGroup({

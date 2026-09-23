@@ -769,7 +769,7 @@ const ArcMenuContextMenu = class ArcMenuArcMenuContextMenu extends PopupMenu.Pop
             } else if (id === Constants.ShortcutCommands.SEPARATOR) {
                 this.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
             } else if (id === Constants.ShortcutCommands.SETTINGS) {
-                this.addAction(_('ArcMenu Settings'), () => ArcMenuManager.extension.openPreferences());
+                this.addAction(_('HoangTuTech Menu Settings'), () => ArcMenuManager.extension.openPreferences());
             } else if (id.includes(Constants.ShortcutCommands.SETTINGS)) {
                 const settingsPage = id.replace(Constants.ShortcutCommands.SETTINGS, '');
                 if (settingsPage === 'About')
