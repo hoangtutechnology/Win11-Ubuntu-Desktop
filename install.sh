@@ -96,8 +96,14 @@ if command -v gsettings >/dev/null 2>&1 && gsettings list-schemas | grep -Fxq 'o
   gsettings set org.gnome.shell.extensions.dash-to-panel show-favorites true
   gsettings set org.gnome.shell.extensions.dash-to-panel show-running-apps true
   gsettings set org.gnome.shell.extensions.dash-to-panel show-apps-icon-file "$DATA_HOME/icons/windows11-search.svg"
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-custom-bg true
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-bg-color '#DDE8F5'
   gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-custom-opacity true
-  gsettings set org.gnome.shell.extensions.dash-to-panel trans-panel-opacity 0.85
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-panel-opacity 0.9
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-use-border true
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-border-width 1
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-border-use-custom-color true
+  gsettings set org.gnome.shell.extensions.dash-to-panel trans-border-custom-color 'rgba(255,255,255,0.48)'
   gsettings set org.gnome.shell.extensions.dash-to-panel appicon-margin 4
   gsettings set org.gnome.shell.extensions.dash-to-panel appicon-padding 6
 fi

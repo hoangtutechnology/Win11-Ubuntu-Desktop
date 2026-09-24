@@ -590,3 +590,15 @@
     border: 1px solid rgba(31, 41, 55, 0.12) !important;
     border-radius: 14px !important;
 }
+
+/* Keep taskbar labels and system indicators legible on the light panel. */
+#panel.dashtopanelMainPanel StLabel,
+#panel.dashtopanelMainPanel .clock-display,
+#panel.dashtopanelMainPanel .clock-display StLabel {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+#panel.dashtopanelMainPanel .system-status-icon {
+    color: #000000 !important;
+}

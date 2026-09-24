@@ -2,7 +2,7 @@
 
 **Project author and maintainer:** hoangtutech
 
-A reusable GNOME desktop setup based on the configuration currently used on this computer. It keeps Ubuntu/GNOME and adds a Windows 11 inspired panel, Start menu, search, icons, and a small resource monitor.
+A reusable GNOME desktop setup based on the configuration currently used on this computer. It keeps Ubuntu/GNOME and adds a light blue-gray translucent Windows 11-style taskbar, Start menu, search, icons, and a small resource monitor.
 
 ## Included
 
